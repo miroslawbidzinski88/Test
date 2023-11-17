@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Przykład JavaScript z akcją toggle</title>
+</head>
+<body>
+
+<button id="myButton">Kliknij mnie</button>
+<p id="myText">Tekst po kliknięciu na przycisku został wyświetlony!</p>
+
+<script>
+  // Pobieramy przycisk i paragraf za pomocą identyfikatorów
+  var button = document.getElementById("myButton");
+  var text = document.getElementById("myText");
+
+  // Dodajemy obsługę zdarzenia kliknięcia na przycisku z użyciem akcji toggle
+  button.addEventListener("click", function() {
+    text.classList.toggle("hidden");
+  });
+</script>
+
+<style>
+  /* Dodajemy styl ukrywający tekst */
+  .hidden {
+    display: none;
+  }
+</style>
+
+</body>
+</html>
